@@ -90,13 +90,28 @@
   color: #b1b1b1;
 }
 
+.flag-map {
+  position: relative;
+}
+
+.flag-map::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
 .flag img {
   cursor: pointer;
   box-shadow: 0 1.25em 1.8em rgb(8 21 65 / 25%);
   border-radius: 6px;
-  width: 200px;
+  width: 45%;
   margin: 0 auto;
-  display: block;
+  float: left;
+}
+
+.flag iframe {
+  width: 49%;
+  float: right;
 }
 
 .flag h2 {
@@ -104,6 +119,7 @@
   color: var(--tc-clouds);
   padding: 13px 0px;
   margin: 10px 0;
+  display: block;
 }
 
 .country-info {
