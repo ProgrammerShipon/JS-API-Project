@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,51 +8,72 @@
   <title> Country Guide App </title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
 
   <div class="container">
     <div class="content">
 
       <div class="search-input">
-        <input id="inputSearch" type="text" placeholder="Enter a country name" >
+        <input id="inputSearch" type="text" value="Bangladesh" placeholder="Enter a country name">
         <button id="SearchBtn"> Search </button>
       </div>
 
-      <div class="flag">
-        <div class="flag-map">
-          <img src="./bd.png" alt="Bangladesh">
-          <iframe src="https://goo.gl/maps/op6gmLbHcvv6rLhH6" frameborder="0"></iframe>
-        </div>
-        <h2 id="countryName"> Bangladesh </h2>
-      </div>
+      <div id="main-content">
 
-      <div class="country-info">
-        <div class="wrapper">
-          <div class="wrapper-data">
-            <h4> Capital </h4>
-            <strong> : </strong>
-            <span> Dhaka </span>
+        <div class="flag">
+          <div class="flag-map">
+            <img id="country-img" src="./bd.png" alt="Bangladesh">
+            <iframe id="location_map"
+              src="https://www.google.com/maps/embed/v1/place?q=rajbari&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+              frameborder="0">
+            </iframe>
           </div>
+          <h2 id="countryName"> Bangladesh </h2>
         </div>
-        <div class="wrapper">
-          <div class="wrapper-data">
-            <h4> Continent </h4>
-            <strong> : </strong>
-            <span> Asia </span>
+
+        <div class="country-info">
+          <div class="wrapper">
+            <div class="wrapper-data">
+              <h4> Capital </h4>
+              <strong> : </strong>
+              <span id="Capital"> Dhaka </span>
+            </div>
           </div>
-        </div>
-        <div class="wrapper">
-          <div class="wrapper-data">
-            <h4> Currency </h4>
-            <strong> : </strong>
-            <span> Taka </span>
+          <div class="wrapper">
+            <div class="wrapper-data">
+              <h4> Continent </h4>
+              <strong> : </strong>
+              <span id="continent"> Asia </span>
+            </div>
           </div>
-        </div>
-        <div class="wrapper">
-          <div class="wrapper-data">
-            <h4> Common Languages </h4>
-            <strong> : </strong>
-            <span> Bangla </span>
+          <div class="wrapper">
+            <div class="wrapper-data">
+              <h4> Population </h4>
+              <strong> : </strong>
+              <span id="population"> 0000000 </span>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="wrapper-data">
+              <h4> Sub-Region </h4>
+              <strong> : </strong>
+              <span id="subRegion"> 0000000 </span>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="wrapper-data">
+              <h4> Currency </h4>
+              <strong> : </strong>
+              <span id="currency"> Taka </span>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="wrapper-data">
+              <h4> Common Languages </h4>
+              <strong> : </strong>
+              <span id="languages"> Bangla </span>
+            </div>
           </div>
         </div>
       </div>
@@ -60,4 +82,5 @@
 
   <script src="./app.js"></script>
 </body>
+
 </html>
