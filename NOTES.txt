@@ -1,1 +1,9 @@
 https://github.com/ProgrammerShipon/JS-API-Project.git
+
+# Live Project
+
+## Country-Guide-App
+https://programmershipon.github.io/JS-API-Project/Country-Guide-App
+
+## Random Joke Generator -API
+https://programmershipon.github.io/JS-API-Project/Random Joke Generator -API
